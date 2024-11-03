@@ -4,7 +4,7 @@
 - Python >=3.10 <=3.13
 - [Miniconda](https://docs.anaconda.com/miniconda/#quick-command-line-install)
 - OpenAI API key ([Get it here](https://platform.openai.com/api-keys))
-- Make sure docker is installed on your system and running (for the developer and qa to run the generated code)
+- Make sure docker is installed on your system and running (for the developer and qa agents to run the generated code)
 
 ## Installation Steps
 
@@ -39,7 +39,7 @@
    crewai run
    ```
 
-2. Follow the instructions in the terminal to play the game
+2. Execute generated python code
    ```bash
    python src/tic_tac_toe/game.py
    ```
