@@ -10,6 +10,7 @@ dependencies = [
 
 [project.scripts]
 tic_tac_toe = "tic_tac_toe.main:main"
+run_crew = "tic_tac_toe.main:main"
 
 [build-system]
 requires = ["hatchling"]

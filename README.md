@@ -32,7 +32,15 @@
    vi .env    # Add your OpenAI API key here
    ```
 
-5. **Run the project**
+## Run the project
+
+1. Start the crew:
    ```bash
    crewai run
    ```
+
+2. Follow the instructions in the terminal to play the game
+   ```bash
+   python src/tic_tac_toe/game.py
+   ```
+
