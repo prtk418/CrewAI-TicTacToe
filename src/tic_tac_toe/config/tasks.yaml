@@ -1,0 +1,41 @@
+define_requirements:
+  description: >
+    Define the requirements and features for the tic-tac-toe game
+  expected_output: >
+    Detailed requirements document for the game
+  agent: product_manager
+
+design_mechanics:
+  description: >
+    Design the game mechanics and rules
+  expected_output: >
+    Game design document with mechanics and rules
+  agent: game_designer
+  context:
+    - define_requirements
+
+implement_game:
+  description: >
+    Implement the tic-tac-toe game in Python
+    The game should have a GUI with human entering the moves
+    Do not make it a cli game
+    Do not hardcode the moves
+    On receiving feedback from QA Engineer, update the code on saved file and pass the task to QA Engineer again
+  agent: developer
+  expected_output: >
+    Return only python code, no other text. no backticks as well.
+  context:
+    - design_mechanics
+
+test_game:
+  description: >
+    Test the tic tac toe game implementation as designed by game designer
+    Run the code and test it well
+    If it is not working, delegate to the developer
+    And ask him to update the code on saved file as well
+    If it works well just terminate the task
+  expected_output: >
+    Test report with findings and recommendations
+  agent: qa_engineer
+  context:
+    - implement_game
