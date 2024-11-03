@@ -4,6 +4,7 @@
 - Python >=3.10 <=3.13
 - [Miniconda](https://docs.anaconda.com/miniconda/#quick-command-line-install)
 - OpenAI API key ([Get it here](https://platform.openai.com/api-keys))
+- Make sure docker is installed on your system and running (for the developer and qa to run the generated code)
 
 ## Installation Steps
 
